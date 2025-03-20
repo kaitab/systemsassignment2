@@ -1,0 +1,25 @@
+body {
+    font-family: Chiller;
+    font-size: 2vw;
+    margin: 30px;
+    padding: 30px;
+    background-color: maroon;
+}
+
+h1 {
+    font-family: Vivaldi;
+    font-size: 4vw;
+    color: orange;
+}
+
+input[type="text"]{
+    font-family: Gigi;
+    width: 1000px;
+    color: pink;
+}
+
+input[type="submit"]{
+    font-family: Informal Roman;
+    font-size: 2vw;
+    color: pink;
+}

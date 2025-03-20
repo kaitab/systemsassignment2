@@ -1,0 +1,13 @@
+body {
+    font-family: Impact;
+    font-size: 2vw;
+    margin: 30px;
+    padding: 30px;
+    background-color: yellow;
+}
+
+h1 {
+    font-family: Chiller;
+    font-size: 10vw;
+    color: black;
+}
