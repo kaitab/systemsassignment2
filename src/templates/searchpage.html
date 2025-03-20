@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search results:</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='search.css') }}">
+</head>
+<body>
+    <h1>Search results:</h1>
+    {% for note in results %}
+        <p>{{note}}</p>
+    {% endfor %}
+</body>
+</html>

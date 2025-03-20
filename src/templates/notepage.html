@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Note</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='plain.css') }}">
+</head>
+<body>
+    <h1>{{ name }}</h1>
+    <p>{{ note_body }}</p>
+    <h2> {{ "Comments:" }}</h2>
+    <p>{{ comments }} <p>
+</body>
+</html>

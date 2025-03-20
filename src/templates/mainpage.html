@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notesapp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to NotesApp!</h1>
+    <p>Search notes:</p>
+    <form action="/find" method=get>
+        <input type=text name=term placeholder="Search"/>
+        <input type="submit" value="Search"/>
+    </form>
+    <p>View all notes:</p>
+        {% for note in notes %}
+            <p>{{note}}</p>
+            <form action="/del/{{ note.id }}" method="POST">
+                <button type="submit"> Delete </button>
+            </form>
+        {% endfor %}
+    <p>Add notes:</p>
+    <form action="/add" method=post>
+        <input type=text name=title placeholder="title"/>
+        <input type=text name=content placeholder="body"/>
+        <input type="submit" value="Add Note"/>
+    </form>
+</body>
+</html>
